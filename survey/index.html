@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="./index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <main>
+        <div class="title-content">
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </div>
+
+        <form id="survey-form">
+            <label id="name-label" for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+            <label id="email-label" for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter your email" required>
+            <label id="number-label" for="number">Age (optional)</label>
+            <input id="number" type="number" max="99" min="15" placeholder="Age">
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <input type="radio" id="definitely" name="recommend" value="definitely">
+            <label for="definitely">Definitely</label>
+            <input type="radio" id="maybe" name="recommend" value="maybe">
+            <label for="maybe">Maybe</label>
+            <input type="radio" id="notsure" name="recommend" value="notsure">
+            <label for="notsure">Not sure</label>
+            <p>What is your favorite feature of freeCodeCamp?</p>
+            <select id="dropdown">
+                <option value="">Select an option</option>
+                <option value="callenge">Challenges</option>
+                <option value="project">Projects</option>
+                <option value="community">Community</option>
+                <option value="opensource">Open Source</option>
+            </select>
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <input id="frontendprojects" type="checkbox" name="improve" value="frontendprojects">
+            <label for="frontendprojects">Front-end Projects</label>
+            <input id="backendprojects" type="checkbox" name="improve" value="backendprojects">
+            <label for="backendprojects">Back-end Projects</label>
+            <input id="datavisualization" type="checkbox" name="improve" value="datavisualization">
+            <label for="datavisualization">Data Visualization</label>
+            <input id="challenges" type="checkbox" name="improve" value="challenges">
+            <label for="challenges">Challenges</label>
+            <input id="opensourcecommunity" type="checkbox" name="improve" value="opensourcecommunity">
+            <label for="opensourcecommunity">Open Source Community</label>
+            <input id="giterhelp" type="checkbox" name="improve" value="giterhelp">
+            <label for="giterhelp">Gitter help rooms</label>
+            <input id="videos" type="checkbox" name="improve" value="videos">
+            <label for="videos">Videos</label>
+            <input id="citymeetups" type="checkbox" name="improve" value="citymeetups">
+            <label for="citymeetups">City Meetups</label>
+            <input id="wiki" type="checkbox" name="improve" value="wiki">
+            <label for="wiki">Wiki</label>
+            <input id="forum" type="checkbox" name="improve" value="forum">
+            <label for="forum">Forum</label>
+            <input id="additionalcourses" type="checkbox" name="improve" value="additionalcourses">
+            <label for="additionalcourses">Additional Courses</label>
+            <p>Any comments or suggestions?</p>
+            <textarea name="" id="" cols="30" rows="10" placeholder="No comments"></textarea>
+            <input id="submit" type="submit" value="submit">
+        </form>
+    </main>
+</body>
+
+</html>
